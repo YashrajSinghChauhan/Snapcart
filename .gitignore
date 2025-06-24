@@ -1,0 +1,8 @@
+snapcart_ui/node_modules/
+node/
+node_modules/
+target/
+.env
+*.log
+.idea/
+.vscode/
