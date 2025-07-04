@@ -6,12 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.snapcart.Entity.Product;
 import com.snapcart.Services.ProductService;
 
 @RestController
 @RequestMapping("/products")
+@CrossOrigin(origins = "https://ministerial-opossum-rjchouhan591-66d7c0f4.koyeb.app")
 public class ProductController {
 	 @Autowired
 	 private ProductService productService;
