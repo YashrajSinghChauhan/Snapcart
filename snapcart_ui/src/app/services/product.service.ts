@@ -14,7 +14,7 @@ export interface Product {
 export class ProductService {
 
 
-   private baseUrl = 'http://localhost:8080/products/all';
+   private baseUrl = 'https://ministerial-opossum-rjchouhan591-66d7c0f4.koyeb.app/products/all';
 
   constructor(private http: HttpClient) {}
 
