@@ -25,8 +25,21 @@ public class SerucityConfig {
 ////						).anyRequest().authenticated())
 //	
 //		.httpBasic(Customizer.withDefaults());
+		  http
+          .authorizeHttpRequests(auth -> auth
+              .requestMatchers("/h2-console/**").permitAll()
+              .anyRequest().authenticated()
+          )
+          .csrf(csrf -> csrf
+              .ignoringRequestMatchers("/h2-console/**")
+          )
+          .headers(headers -> headers
+              .frameOptions().sameOrigin() // 🔐 Allows iframe for H2 Console
+          )
+          .formLogin();
 
-		return http.build();
+      return http.build();
+		//return http.build();
 
 		
 	} 
