@@ -13,7 +13,7 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
-@Component
+//@Component
 public class SnapcartCustomFilter implements Filter {
 
 	@Override
