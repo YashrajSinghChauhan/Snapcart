@@ -1,0 +1,38 @@
+src/app/
+├── core/                   # Auth, guards, services
+│   ├── auth/
+│   │   ├── auth.service.ts
+│   │   ├── auth.guard.ts
+│   │   └── token-storage.service.ts
+│   └── interceptors/
+│       └── auth.interceptor.ts
+│
+├── shared/                 # Reusable components, directives
+│   ├── navbar/
+│   ├── footer/
+│   └── components/
+│       └── product-card/
+│
+├── public/                 # Accessible without login
+│   ├── home/
+│   ├── login/
+│   └── register/
+│
+├── user/                   # For logged-in users
+│   ├── dashboard/
+│   ├── profile/
+│   └── products/
+│
+├── admin/                  # Admin-specific views
+│   ├── dashboard/
+│   ├── manage-products/
+│   └── manage-users/
+│
+├── services/               # REST API Services
+│   ├── product.service.ts
+│   ├── user.service.ts
+│   └── admin.service.ts
+│
+├── app-routing.module.ts   # Route configuration
+├── app.component.ts
+└── app.module.ts

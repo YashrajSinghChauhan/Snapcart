@@ -1,4 +1,9 @@
 package com.snapcart.Entity;
+import java.util.Collection;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -16,7 +21,14 @@ public class User {
 	    private String name;
 	    private String email;
 	    private String mobile;
-	    // Getters & Setters
+	    private String password;
+	    public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
+		}
+		// Getters & Setters
 	    public Long getId() {
 	    	return id; 
 	    }
@@ -44,6 +56,7 @@ public class User {
 		public void setMobile(String mobile) {
 			this.mobile = mobile;
 		}
-
+	
+	
 
 }
