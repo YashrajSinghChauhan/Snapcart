@@ -13,7 +13,7 @@ import com.snapcart.Services.ProductService;
 
 @RestController
 @RequestMapping("/products")
-@CrossOrigin(origins = "https://ministerial-opossum-rjchouhan591-66d7c0f4.koyeb.app")
+@CrossOrigin(origins = "*")
 public class ProductController {
 	 @Autowired
 	 private ProductService productService;
