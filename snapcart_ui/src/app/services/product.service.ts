@@ -14,7 +14,7 @@ export interface Product {
 export class ProductService {
 
 
-   private baseUrl = 'http://localhost:8080/products/all';
+   private baseUrl = 'https://fast-florence-rjchouhan591-e5e8d115.koyeb.app/products/all';
 
   constructor(private http: HttpClient) {}
 
